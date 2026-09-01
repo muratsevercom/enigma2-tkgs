@@ -4,6 +4,7 @@
 Enigma2 için çok büyük eksik olan ama geliştiriciler tarafından bir türlü yapılamayan bir plugin. Nihayet TKGS datasını derinlemesine analiz edip, tam olarak çalışma mantığını çözdüm ve eklenti haline getirdim.
 
 Peki ne yapar bu plugin?
+
 Türksat Kanal Güncelleme Sistemi (TKGS) verisini canlı yayından okuyup Enigma2 kanal listenizi ve LCN sırasını otomatik olarak günceller.
 
 
