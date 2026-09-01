@@ -1,7 +1,7 @@
 
 
 # Enigma2 Turksat Kanal Güncelleme Sistemi (TKGS) Eklentisi
-Enigma2 için çok büyük eksik olan ama geliştiriciler tarafından bir türlü yapılamayan bir plugin. Nihayet TKGS datasını derinlemesine analiz edip, tam olarak çalışma mantığını çözdüm ve eklenti haline getirdim.
+Enigma2 için çok büyük eksik olan ama geliştiriciler tarafından bir türlü yapılamayan bir plugin. Nihayet TKGS datasını derinlemesine analiz edip, tam olarak çalışma mantığını çözdüm ve Enigma2 plugin haline getirdim.
 
 Peki ne iş yapar bu plugin?
 
