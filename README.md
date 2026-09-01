@@ -10,6 +10,9 @@ Bu plugin; Türksat Kanal Güncelleme Sistemi (TKGS) verisini canlı yayından o
 
 <img width="1920" height="1080" alt="screenshot_20260901112427" src="https://github.com/user-attachments/assets/1515ee06-8f9d-4592-a5e1-4266b1ee77e7" />
 
+<img width="1920" height="1080" alt="1_0_1_277E_9E99_42E_1A42EEF_0_0_0_20260901145543" src="https://github.com/user-attachments/assets/274c2558-5d6a-40de-a434-833e0298d28a" />
+
+
 
 
 ## Özellikler
