@@ -22,6 +22,7 @@ Bu plugin; Türksat Kanal Güncelleme Sistemi (TKGS) verisini canlı yayından o
 
 ## Gereksinimler
 
+- İnternet bağlantısı (Hız önemli değil)
 - Enigma2 tabanlı bir alıcı (OpenATV, OpenPLi, VTi, PurE2, DreamOS vb.)
 - **Python 3** (Python 2 desteklenmiyor — güncel imajların hepsinde zaten varsayılan)
 - Türksat uydusunu görebilen bir DVB-S2 tuner
