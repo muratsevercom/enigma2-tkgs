@@ -13,6 +13,10 @@ Bu plugin; Türksat Kanal Güncelleme Sistemi (TKGS) verisini canlı yayından o
 
 <img width="1920" height="1080" alt="1_0_1_277E_9E99_42E_1A42EEF_0_0_0_20260901145543" src="https://github.com/user-attachments/assets/274c2558-5d6a-40de-a434-833e0298d28a" />
 
+> [!CAUTION]
+> ## TEST EDİLEN ORTAMLAR
+> ARM işlemcilerde sorunsuz çalışıyor. MIPS işlemcilerde henüz test edilmedi.
+>
 
 
 
