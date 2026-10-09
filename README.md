@@ -10,6 +10,7 @@ Türksat 42.0E'nin yayınladığı TKGS listesini doğrudan uydudan okur ve kana
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7af8b85a-cd45-4d00-b910-cf50d2ec5e68" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a64f9e67-6bcc-43af-adac-83120eb9e237" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b72e0003-5ac7-41d6-95c4-4263d7562758" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ca128d5a-871f-48b6-a04c-20a8563b9b17" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/32a8d384-aedc-47be-81a7-318e49fa9f93" />
 
 
