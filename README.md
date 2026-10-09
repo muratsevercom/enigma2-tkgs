@@ -47,7 +47,7 @@ opkg install /tmp/enigma2-plugin-extensions-mstkgs_4.4.6_all.ipk
 dpkg -i /tmp/enigma2-plugin-extensions-mstkgs_4.4.6_all.deb
 ```
 
-Kurulumdan sonra Enigma2'yi yeniden başlatın. Eklenti **Eklentiler** listesinde ve **Kurulum → Tarama** menüsünde görünür.
+Kurulumdan sonra Enigma2'yi yeniden başlatın. Eklenti **Eklentiler** listesinde görünür.
 
 ## Kullanım
 
