@@ -124,3 +124,5 @@ Kanal listeniz olduğu gibi kalır. TKGS buketlerini de silmek isterseniz önce 
 ## Geliştirici
 
 **Murat SEVER** · @muratsevercom
+
+https://muratsever.com
