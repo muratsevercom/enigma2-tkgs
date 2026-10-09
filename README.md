@@ -5,6 +5,16 @@ Enigma2 uydu alıcıları için Türksat kanal listesi eklentisi.
 Türksat 42.0E'nin yayınladığı TKGS listesini doğrudan uydudan okur ve kanal listenizi birkaç saniyede kurar. Tarama yapmaz, internet gerektirmez.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/389beb79-00c3-4196-9160-ab95c99eb4c9" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7aea7ddb-4628-43ec-b72d-1174bb39e241" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2ca55af5-d33b-4d8a-adca-beb951ab450d" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0f2dae2e-9bfe-4c43-9b8c-b56f47d3b580" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4eca663c-c02e-47dd-9675-fd1b3e69af5a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/32a8d384-aedc-47be-81a7-318e49fa9f93" />
+
+
+
+
+
 
 
 ## Özellikler
