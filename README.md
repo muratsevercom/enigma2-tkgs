@@ -1,116 +1,118 @@
+# TURKSAT TKGS
 
+Enigma2 uydu alıcıları için Türksat kanal listesi eklentisi.
 
-# Enigma2 Turksat Kanal Güncelleme Sistemi (TKGS) Eklentisi
-Enigma2 için çok büyük eksik olan ama geliştiriciler tarafından bir türlü yapılamayan bir plugin. Nihayet TKGS datasını derinlemesine analiz edip, tam olarak çalışma mantığını çözdüm ve Enigma2 plugin haline getirdim.
+Türksat 42.0E'nin yayınladığı TKGS listesini doğrudan uydudan okur ve kanal listenizi birkaç saniyede kurar. Tarama yapmaz, internet gerektirmez.
 
-Peki ne iş yapar bu plugin?
-
-Bu plugin; Türksat Kanal Güncelleme Sistemi (TKGS) verisini canlı yayından okuyup Enigma2 kanal listenizi ve LCN sırasını otomatik olarak günceller.
-
-
-<img width="1920" height="1080" alt="1_0_1_277E_9E99_42E_1A42EEF_0_0_0_20260901145543" src="https://github.com/user-attachments/assets/c91f4625-34b5-4b21-b917-ed3d379a823b" />
-
-
-<img width="1920" height="1080" alt="1_0_1_277E_9E99_42E_1A42EEF_0_0_0_20260901145543" src="https://github.com/user-attachments/assets/274c2558-5d6a-40de-a434-833e0298d28a" />
-
-> [!CAUTION]
-> ## TEST EDİLEN ORTAMLAR
-> ARM işlemcilerde sorunsuz çalışıyor. MIPS işlemcilerde henüz test edilmedi.
->
-
-
+![TURKSAT TKGS](docs/ekran-ana.png)
 
 ## Özellikler
 
-- Türksat uydusundan TKGS verisini doğrudan demux üzerinden okur, harici bir sunucuya ihtiyaç duymaz
-- Okunan kanalları LCN sırasına göre otomatik bir buket (`userbouquet.tkgs_auto.tv`) olarak yazar
-- Tarama sırasında mevcut kanaldan TKGS frekansına otomatik geçiş yapar, işlem bitince izlediğiniz kanala geri döner
-- İlerleme durumu, bulunan kanallar ve LCN eşleşme sayısı ekranda canlı olarak gösterilir
-- Frekans, polarizasyon ve sembol oranı ayarlanabilir
+- **Taramasız kurulum:** Kanal listesi doğrudan Türksat'ın yayınladığı tablodan kurulur.
+- **Türksat numaralandırması:** Kanal numaraları Türksat sıralamasıyla birebir aynıdır.
+- **Önizleme:** Kurmadan önce kanalları görür, TV/radyo ve kategoriye göre filtreleyebilirsiniz. Yeni eklenecek ve şifreli kanallar işaretlidir.
+- **Canlı kanal akışı:** Okunan kanallar ekranda alt alta listelenir.
+- **Otomatik güncelleme:** Liste her gün, her hafta veya her ay kendiliğinden kontrol edilir.
+- **Sinyal testi:** TKGS frekanslarında kalite, güç ve dB değerleri canlı gösterilir.
+- **Yedekleme:** Her kurulumdan önce yedek alınır, tek tuşla eski listeye dönülür.
+- **Güvenli:** Diğer buketlerinize ve mevcut kanallarınıza dokunmaz, yalnızca eksikleri ekler.
 
-## Gereksinimler
-
-- İnternet bağlantısı (Hız önemli değil)
-- Enigma2 tabanlı bir alıcı (OpenATV, OpenPLi, VTi, PurE2, DreamOS vb.)
-- **Python 3** (Python 2 desteklenmiyor — güncel imajların hepsinde zaten varsayılan)
-- Türksat uydusunu görebilen bir DVB-S2 tuner
-
-> [!CAUTION]
-> ## Önemli NOT
-> Eklentiyi çalıştırmadan önce mutlaka aşağıdaki frekanslardan **"Şebeke Arama (NIT)"** açık şekilde tarama yapın.
->
-> * Frekans: 12380 MHz
-> * Polarizasyon: V - Dikey (Vertical)
-> * Sembol Oranı (SR): 27500
-> * FEC: 3/4
->
-> Alternatif olarak Orta Asya ve Türkiye bölgesi için şu değerler de kullanılabilir:
->
-> * Frekans: 12423 MHz
-> * Polarizasyon: H - Yatay (Horizontal)
-> * Sembol Oranı (SR): 30000
-> * FEC: 3/4
+| Kanal akışı | Kanal Gezgini |
+|:---:|:---:|
+| ![Kanal akışı](docs/ekran-okuma.png) | ![Kanal Gezgini](docs/ekran-gezgin.png) |
 
 ## Kurulum
 
-**OpenATV / OpenPLi / VTi / PurE2 ve diğer opkg tabanlı imajlar:**
+Paketi [Releases](../../releases) sayfasından indirip kutunun `/tmp` klasörüne kopyalayın (FTP ile).
+
+**OpenATV, OpenPLi ve benzeri imajlar:**
 
 ```sh
-opkg install tkgsautolcn_1.0_all.ipk
+opkg install /tmp/enigma2-plugin-extensions-mstkgs_4.4.6_all.ipk
 ```
 
 **DreamOS:**
 
 ```sh
-dpkg -i tkgsautolcn_1.0_all.deb
+dpkg -i /tmp/enigma2-plugin-extensions-mstkgs_4.4.6_all.deb
 ```
 
-Kurulumdan sonra eklenti **Eklentiler (Extensions)** menüsünde görünür.
+Kurulumdan sonra Enigma2'yi yeniden başlatın. Eklenti **Eklentiler** listesinde ve **Kurulum → Tarama** menüsünde görünür.
 
 ## Kullanım
 
-1. Eklentiler menüsünden **TKGS Otomatik Kanal Güncelleme**'yi açın.
-2. Frekans, polarizasyon ve sembol oranını (varsayılan: `12380 V 27500`)yazın ya da default frekansta bırakın, TKGS frekans değişirse, güncel frekansla değiştirin.
-3. **YEŞİL** tuşuna veya **OK**'a basarak taramayı başlatın.
-4. Tarama ~20 saniye sürer; bulunan kanallar LCN sırasıyla listede görünür.
-5. Tarama bitince kanal listeniz otomatik güncellenmiş olur.
+1. **Eklentiler** menüsünden **TURKSAT TKGS**'yi açın.
+2. **Oku ve Önizle**'yi seçin. Eklenti TKGS frekansına kilitlenir ve listeyi okur.
+3. Bulunan kanallar ekrana dökülür, ardından **Kanal Gezgini** açılır.
+4. Listeyi kontrol edip **yeşil** tuşla kurun.
+
+Önizleme istemiyorsanız **Tek Tuşla Kur** okuma biter bitmez listeyi kurar.
+
+Ana ekranda yön tuşlarıyla kartlar arasında gezinebilir, **1–8** tuşlarıyla kartları doğrudan açabilirsiniz. İşlem sırasında izlediğiniz kanal durdurulursa, işlem bitince geri açılır.
+
+## Otomatik güncelleme
+
+**Otomatik Güncelleme** kartından açılır. Önerilen ayar:
+
+> **Her gün 04:00 · Yalnızca bekleme modunda · Yalnızca liste değiştiyse kur**
+
+- İzlediğiniz yayın hiç kesilmez.
+- Liste değişmediyse hiçbir dosyaya dokunulmaz.
+- Kutu o saatte kapalıysa, açıldığında ilk fırsatta kontrol yapılır.
+- Kayıt sürüyorsa kontrol ertelenir.
+
+## Ayarlar
+
+En çok kullanılanlar:
+
+- **TKGS transponderı:** Otomatik ya da tek bir frekans
+- **Kanal listesi:** HD veya SD sıralaması
+- **Buket adı:** Kanal listesinde görünecek isim
+- **Radyo buketi / Kategori buketleri:** Ek buketler oluşturur
+- **Şifreli kanalları dahil et:** Kapalıysa şifreli kanallar bukete eklenmez
+- **Ana menüde göster:** Ana Menü'ye kısayol ekler
+
+## TKGS frekansları
+
+Eklenti bu frekansları sırayla dener (PID 8181):
+
+| Frekans | Polarizasyon | Sembol oranı |
+|:---:|:---:|:---:|
+| 12380 | Dikey | 27500 |
+| 12423 | Dikey | 27500 |
+| 12423 | Yatay | 30000 |
+| 12458 | Dikey | 30000 |
+
+Çanağınız yalnızca birini alıyorsa Ayarlar'dan o frekansı sabitleyebilirsiniz.
+
+## Gereksinimler
+
+- Türksat 42.0E tanımlı bir uydu tuneri (DVB-S/S2)
+- OpenATV, OpenPLi, DreamOS veya benzeri bir Enigma2 imajı
+- Python 2.7 ve Python 3 desteklenir; ARM ve MIPS işlemcilerde çalışır
+
+Test edilen cihaz: GigaBlue Trio 4K Pro, OpenATV 8.0.
+
+## Sorun giderme
+
+**Kilit alınamıyor:** **Sinyal Testi** ile frekansları kontrol edin. Sinyal zayıfsa Ayarlar'dan **En uzun okuma süresi**'ni artırın.
+
+**Eski listeye dönmek istiyorum:** **Buket ve Yedekler → Yedekten geri yükle**.
+
+**Hata bildirmek istiyorum:**
+
+1. **Ayarlar → Tanı kaydı**'nı açın.
+2. Sorunu yeniden oluşturun.
+3. `/home/root/logs/mstkgs_tani.log` dosyasını issue'ya ekleyin.
 
 ## Kaldırma
 
 ```sh
-# opkg tabanlı imajlar
-opkg remove enigma2-plugin-extensions-tkgsautolcn
-
-# DreamOS
-dpkg -r enigma2-plugin-extensions-tkgsautolcn
+opkg remove enigma2-plugin-extensions-mstkgs
 ```
 
-## Sorun Giderme
-
-**"Refusing to load file... it matches the installed version" hatası:**
-
-```sh
-opkg remove enigma2-plugin-extensions-tkgsautolcn
-opkg install tkgsautolcn_1.0_all.ipk
-```
-
-veya doğrudan zorla üzerine kurun:
-
-```sh
-opkg install --force-reinstall tkgsautolcn_1.0_all.ipk
-```
-
-**TKGS frekansı bulunamadı uyarısı:** Cihazınızda o transponder'a ait bir kanal kayıtlı olmayabilir; ayarlar ekranından doğru frekans/polarizasyon/sembol oranını girin.
-
-## Destek
-
-Sorun ve önerileriniz için: **muratsevercom@gmail.com**
-
-## Lisans
-
-Tüm hakları saklıdır. Bu eklenti ücretsiz kullanım için sunulmuştur. 
+Kanal listeniz olduğu gibi kalır. TKGS buketlerini de silmek isterseniz önce eklentide **Buket ve Yedekler → TKGS buketlerini kaldır**'ı kullanın.
 
 ## Geliştirici
 
-Murat SEVER
-https://muratsever.com
+**Murat SEVER** · @muratsevercom
