@@ -28,9 +28,6 @@ Türksat 42.0E'nin yayınladığı TKGS listesini doğrudan uydudan okur ve kana
 - **Yedekleme:** Her kurulumdan önce yedek alınır, tek tuşla eski listeye dönülür.
 - **Güvenli:** Diğer buketlerinize ve mevcut kanallarınıza dokunmaz, yalnızca eksikleri ekler.
 
-| Kanal akışı | Kanal Gezgini |
-|:---:|:---:|
-| ![Kanal akışı](docs/ekran-okuma.png) | ![Kanal Gezgini](docs/ekran-gezgin.png) |
 
 ## Kurulum
 
