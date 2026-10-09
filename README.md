@@ -1,6 +1,6 @@
 # TURKSAT TKGS
 
-Enigma2 uydu alıcıları için Türksat kanal listesi eklentisi.
+Enigma2 uydu alıcıları için TKGS eklentisi.
 TKGS çıktığından beri Enigma2 için bir türlü yapılamayan eklentiydi. Nihayet TKGS mantığını birebir çözdüm ve ilki başarıp bu plugini geliştirdim. Vatana millete hayırlı olsun :)
 
 Türksat 42.0E'nin yayınladığı TKGS listesini doğrudan uydudan okur ve kanal listenizi birkaç saniyede kurar. Tarama yapmaz, internet gerektirmez.
