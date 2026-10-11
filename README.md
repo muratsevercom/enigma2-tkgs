@@ -33,6 +33,9 @@ Türksat 42.0E'nin yayınladığı TKGS listesini doğrudan uydudan okur ve kana
 ## 4.4.8 sürümü ile yapılan düzeltmeler
 
 - **Broadcom işlemciler için fix:** Broadcom işlemci kullanan cihazlarda verilerin okunamama sorunu düzeltildi. Artık VU+ gibi cihazlarda da eklenti çalışıyor.
+- **Hata loglama:** Detaylı hata loglama. Tüm hatalar yakalanıyor.
+- **Performans iyileştirmeleri:** Eklentinin stabil çalışması için performans iyileştirmeleri.
+- **Yedek çalışma:** Tarama esnasında bir işlem hata verirse, yedek sistem devreye girip işlemi tamamlıyor.
  
 ## Kurulum
 
