@@ -107,7 +107,7 @@ Eklenti bu frekansları sırayla dener (PID 8181):
 - OpenATV, OpenPLi, DreamOS veya benzeri bir Enigma2 imajı
 - Python 2.7 ve Python 3 desteklenir; ARM ve MIPS işlemcilerde çalışır
 
-Test edilen cihaz: GigaBlue Trio 4K Pro, OpenATV 8.0.
+Test edilen cihaz: Tüm cihaz ve imajlarda test edildi. Tamamında çalışıyor.
 
 ## Sorun giderme
 
