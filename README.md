@@ -30,7 +30,10 @@ Türksat 42.0E'nin yayınladığı TKGS listesini doğrudan uydudan okur ve kana
 - **Yedekleme:** Her kurulumdan önce yedek alınır, tek tuşla eski listeye dönülür.
 - **Güvenli:** Diğer buketlerinize ve mevcut kanallarınıza dokunmaz, yalnızca eksikleri ekler.
 
+## 4.4.8 sürümü ile yapılan düzeltmeler
 
+- **Broadcom işlemciler için fix:** Broadcom işlemci kullanan cihazlarda verilerin okunamama sorunu düzeltildi. Artık VU+ gibi cihazlarda da eklenti çalışıyor.
+- 
 ## Kurulum
 
 Paketi [Releases](../../releases) sayfasından indirip kutunun `/tmp` klasörüne kopyalayın (FTP ile).
