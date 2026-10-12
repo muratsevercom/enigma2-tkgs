@@ -44,13 +44,13 @@ Paketi [Releases](../../releases) sayfasından indirip kutunun `/tmp` klasörün
 **OpenATV, OpenPLi ve benzeri imajlar:**
 
 ```sh
-opkg install /tmp/enigma2-plugin-extensions-mstkgs_4.4.6_all.ipk
+opkg install /tmp/enigma2-plugin-extensions-mstkgs_4.4.8_all.ipk
 ```
 
 **DreamOS:**
 
 ```sh
-dpkg -i /tmp/enigma2-plugin-extensions-mstkgs_4.4.6_all.deb
+dpkg -i /tmp/enigma2-plugin-extensions-mstkgs_4.4.8_all.deb
 ```
 
 Kurulumdan sonra Enigma2'yi yeniden başlatın. Eklenti **Eklentiler** listesinde görünür.
