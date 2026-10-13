@@ -15,9 +15,9 @@ Türksat 42.0E'nin yayınladığı TKGS listesini doğrudan uydudan okur ve kana
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/32a8d384-aedc-47be-81a7-318e49fa9f93" />
 
 
+## Eklenti OpenATV Feed'e eklendi. Artık Feed'den de indirilebilir
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/256400ea-1524-4567-b43a-00a2cc136fed" />
 
-## Eklenti OpenATV Feed'e eklenti. Artık Feed'den de indirilebilir
 
 
 
